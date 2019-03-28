@@ -197,19 +197,31 @@ header a {
   header h1 {
     margin-top: 1rem;
     display: flex;
-    max-width: 20%;
     margin-bottom: -2rem;
+    border: 1px solid red;
+    flex-direction: column;
+    justify-content: center;
   }
   header nav {
     display: flex;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    width: 40%;
-    margin-left: 50rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    border: 1px solid red;
+    justify-content: space-around;
   }
   header a {
     text-decoration: none;
     color: black;
+    border: 1px solid red;
+  }
+  .welcome-content {
+    border-top: 0.15rem dashed lightgray;
+  }
+  .welcome-content img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .footer {
@@ -277,17 +289,16 @@ header a {
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
-  .container {
-    max-width: 450px;
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    width: 100%;
   }
   .content-section {
     display: flex;
     flex-direction: column;
-  }
-  .content-section .text-content {
-    width: 100%;
-  }
-  .content-section .img-content {
+    color: red;
     width: 100%;
   }
 }
